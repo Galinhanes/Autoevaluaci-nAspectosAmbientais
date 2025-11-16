@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspectos e Impactos Ambientais - Autoavaliación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Clasifica Aspectos e Impactos Ambientais</h1>
+        <p>Arrastra cada tarxeta á columna correspondente. Cando as teñas todas ben, a táboa poñerase verde!</p>
+        
+        <div id="drag-items-container">
+            <div class="drag-item" draggable="true" data-type="Aspecto">Consumo de auga</div>
+            <div class="drag-item" draggable="true" data-type="Impacto">Esgotamento de recursos</div>
+            <div class="drag-item" draggable="true" data-type="Aspecto">Emisións á atmosfera</div>
+            <div class="drag-item" draggable="true" data-type="Impacto">Cambio climático</div>
+            <div class="drag-item" draggable="true" data-type="Aspecto">Xeración de residuos</div>
+            <div class="drag-item" draggable="true" data-type="Impacto">Contaminación do solo</div>
+        </div>
+
+        <div id="drop-zone-container">
+            <div id="drop-aspecto" class="drop-zone" data-target="Aspecto">
+                <h2>Aspecto Ambiental</h2>
+                <p class="drop-hint">(Actividade/proceso da organización)</p>
+            </div>
+            
+            <div id="drop-impacto" class="drop-zone" data-target="Impacto">
+                <h2>Impacto Ambiental</h2>
+                <p class="drop-hint">(Cambio no medio ambiente)</p>
+            </div>
+        </div>
+
+        <button id="reset-button" onclick="location.reload()">Reiniciar Actividade</button>
+        
+        <div id="feedback-message" class="hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
